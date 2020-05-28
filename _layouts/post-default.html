@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+
+  {%- include head.html -%}
+  {%- include header.html -%}
+
+  {% assign posts = site.posts %}
+  <body>
+
+    <div id="sidebar" class="sidebar-area">
+      <a class="sidebar-title" href="/about/" title="about us"> ██████  ██   ██  ██████  ███████ █████████
+██       ██   ██ ██    ██ ██         ██
+██   ███ ███████ ██ #! ██ ███████    ██
+██    ██ ██   ██ ██    ██      ██    ██
+ ██████  ██   ██  ██████  ███████    ██
+
+
+██      ██ ███    ██ ███████
+██      ██ ████   ██ ██
+██      ██ ██ ██  ██ █████
+██      ██ ██  ██ ██ ██
+███████ ██ ██   ████ ███████
+
+
+███████ ███████  ██████ ██    ██ ██████  ██ ████████ ██    ██
+██      ██      ██      ██    ██ ██   ██ ██    ██     ██  ██
+███████ █████   ██      ██    ██ ██████  ██    ██      ████
+     ██ ██      ██      ██    ██ ██   ██ ██    ██       ██
+███████ ███████  ██████  ██████  ██   ██ ██    ██       ██
+
+</a>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+      <br>
+        <div class="sidebar-link-block">
+      {% for post in posts limit:3 %}
+       <a class="sidebar-link" href="{{ post.url | relative_url }}">{{ post.title | escape | truncate: 25 }}</a>
+      {% endfor %}
+        </div>
+      {% if posts.size > 3 %}
+      <br>
+        <a class="sidebar-link" href="{{ '/post-list/' | relative_url }}">...more</a>
+      {% endif %}
+        <div class="audea-logo">
+            <div style="margin-left: 10px;">Powered by...</div>
+        <a href="https://audea.com" target="_blank"><img src="/assets/img/audea-logo.png"></a>
+        </div>
+    </div>
+
+    <main class="page-content" aria-label="Content">
+      <div class="wrapper">
+        {{ content }}
+      </div>
+    </main>
+
+    {%- include footer.html -%}
+
+  </body>
+
+</html>
