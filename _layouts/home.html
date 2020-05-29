@@ -1,8 +1,12 @@
-{% assign latest-post = site.posts[0] %}
+{% assign site-posts = site.posts %}
 
 <html>
   <script>
-      window.location.replace("{{ latest-post.url | relative_url }}");
+      {% if site-posts.size > 0 %}
+        window.location.replace("{{ site-posts[0].url | relative_url }}");
+      {% else %}
+        window.location.replace("{{ "/about" | relative-url }}");
+      {% endif %}
   </script>
 </html>
 
