@@ -8,6 +8,7 @@
   <body>
 
     <div id="sidebar" class="sidebar-area">
+        <div>
       <a class="sidebar-title" href="/about/" title="about us"> ██████  ██   ██  ██████  ███████ █████████
 ██       ██   ██ ██    ██ ██         ██
 ██   ███ ███████ ██ #! ██ ███████    ██
@@ -29,13 +30,8 @@
 ███████ ███████  ██████  ██████  ██   ██ ██    ██       ██
 
 </a>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
-      <br>
+
+        </div>
         <div class="sidebar-link-block">
       {% for post in posts limit:3 %}
        <a class="sidebar-link" href="{{ post.url | relative_url }}">{{ post.title | escape | truncate: 25 }}</a>
