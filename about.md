@@ -31,10 +31,6 @@ GhostLineSecurity is a part of the new department we're working to create at Áu
 	- Tweet us one [@GhostLineSecurity](https://twitter.com/GhostLineSecurity)
 	- Open an issue on every silly mistake we made [@GhostLineSecurity](https://github.com/GhostLineSecurity)
 
-- Áudea
-	- [info@audea.com](mailto:info@audea.com)
-	- Tweet us one [@AUDEA_SDI](https://twitter.com/audea_sdi)
-	- [audea.com](https://audea.com/en/)
-	- In person at our [office](https://www.google.com/maps/place/Audea+Seguridad+de+la+Informacion+S.L./@40.5402757,-3.8959046,17z/data=!3m1!4b1!4m5!3m4!1s0xd4182c4d86e09e1:0x14bfb0d96e12a402!8m2!3d40.5402716!4d-3.8937106)
+
 
 
