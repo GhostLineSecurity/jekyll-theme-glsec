@@ -312,6 +312,9 @@ code {
 pre {
   //padding: 8px 12px;
   overflow-x: auto;
+  padding-left: 5px;
+  padding-top: 5px;
+  padding-bottom: 5px;
 
   > code {
     border: 0 !important;
@@ -403,16 +406,18 @@ table {
       background-color: $table-zebra-color;
     }
   }
-  th, td {
+  th {
     padding: ($spacing-unit / 3) ($spacing-unit / 2);
   }
   th {
     background-color: $table-header-bg-color;
     border: 1px solid $table-header-border;
   }
-  td {
-  //  border: 1px solid $table-border-color;
-  }
+ /* td {
+    padding-left: 10px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+  }*/
 
   @include media-query($on-laptop) {
     display: block;
