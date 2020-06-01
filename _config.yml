@@ -1,16 +1,15 @@
 title: GhostLineSecurity's blog theme. Based on minima!
-author:
-  name: GhostLineSecurity
-  email: contact@ghostlinesecurity.com
+author: GhostLineSecurity
+name: GhostLineSecurity
+email: contact@ghostlinesecurity.com
 description: GhostLineSecurity's blog theme based on jekyll/minima
 
 minima:
   date_format: "%b %-d, %Y"
 
   # generate social links in footer
-  social_links:
-    twitter: GhostLineSec
-    github:  GhostLineSecurity
+twitter_username: GhostLineSec
+github_username:  GhostLineSecurity
 
 # Build settings
 theme: jekyll-theme-glsec
