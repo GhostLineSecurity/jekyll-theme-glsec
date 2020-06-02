@@ -176,6 +176,9 @@ a.sidebar-title:hover {
 
 .footer-col {
   margin-bottom: $spacing-unit / 2;
+  > p {
+    text-align: left;
+  }
 }
 
 .footer-col-1,
@@ -245,6 +248,7 @@ a.sidebar-title:hover {
 
   > li {
     margin-bottom: $spacing-unit;
+    margin-left: 5px;
   }
 }
 
