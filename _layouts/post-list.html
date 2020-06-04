@@ -31,7 +31,9 @@ layout: post
             {{ post.title | escape }}
           </a>
         {%- if site.show_excerpts -%}
+        <div class="excerpt">
           {{ post.excerpt }}
+        </div>
         {%- endif -%}
       </li>
       {%- endfor -%}

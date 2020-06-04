@@ -252,6 +252,14 @@ a.sidebar-title:hover {
   }
 }
 
+.excerpt {
+  text-align: justify;
+  margin-bottom: 15px;
+  display: block;
+  @include relative-font-size(0.85);
+  color: #bbbbbb8c;
+}
+
 .post-meta {
   font-size: $small-font-size;
   color: $brand-color;
