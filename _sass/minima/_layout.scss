@@ -267,8 +267,7 @@ a.sidebar-title:hover {
 
 .post-link {
   display: block;
-  @include relative-font-size(0.9);
-  margin-left: 10px;
+  @include relative-font-size(1.2);
 }
 
 .sidebar-link-block{

@@ -1,12 +1,6 @@
-{% assign site-posts = site.posts %}
-
 <html>
   <script>
-      {% if site-posts.size > 0 %}
-        window.location.replace("{{ site-posts[0].url | relative_url }}");
-      {% else %}
-        window.location.replace("{{ "/about" | relative-url }}");
-      {% endif %}
+      window.location.replace("{{ "/post-list/" | relative-url }}");
   </script>
 </html>
 

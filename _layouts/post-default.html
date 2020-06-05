@@ -9,7 +9,7 @@
 
     <div id="sidebar" class="sidebar-area">
         <div style="display: inline-block;">
-      <a class="sidebar-title" href="/about/" title="about us"> ██████  ██   ██  ██████  ███████ █████████
+      <a class="sidebar-title" href="/" title="Home"> ██████  ██   ██  ██████  ███████ █████████
 ██       ██   ██ ██    ██ ██         ██
 ██   ███ ███████ ██ #! ██ ███████    ██
 ██    ██ ██   ██ ██    ██      ██    ██
@@ -33,14 +33,15 @@
 
         </div>
         <div class="sidebar-link-block">
-      {% for post in posts limit:3 %}
+      {% for post in posts limit:10 %}
        <a class="sidebar-link" href="{{ post.url | relative_url }}">{{ post.title | escape | truncate: 25 }}</a>
       {% endfor %}
         </div>
-      {% if posts.size > 3 %}
-      <br>
-        <a class="sidebar-link" href="{{ '/post-list/' | relative_url }}">...more</a>
+      {% if posts.size > 10 %}
+        <a class="sidebar-link" style="padding-left: 5px;" href="{{ '/post-list/' | relative_url }}">...more</a>
       {% endif %}
+        <br>
+        <a class="sidebar-link" href="{{ '/about/ | relative_url }}">About</a>
         <div class="audea-logo">
             <div style="margin-left: 10px;">Powered by...</div>
         <a href="https://audea.com" target="_blank"><img src="/assets/img/audea-logo.png"></a>
